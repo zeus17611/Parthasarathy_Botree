@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+          		default-init-method="first"
+          		default-destroy-method="last">-->
+ <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+  <!--    <bean id ="bookstore" class="Myspring.BookStore" init-method="init" destroy-method="destroy">  </bean>-->
+<!--    <bean id ="bookstore" class="Myspring.BookStore">  </bean>
+<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+
+<bean id ="bookpublisher" class="Myspring.BookPublisher" init-method="init" destroy-method="destroy">  </bean>
+<bean class="Myspring.BeanPostProcessClass"></bean>
+<bean class="Myspring.BeanPostPrcessSecondClass"></bean>-->
+
+<!-- <bean id="bookbean" class="Myspring.Book">
+<property name="price" value="2000"></property>
+<property name="bookName" value="Java1.0"></property>
+</bean> -->
+
+ <!--<bean id="bookbean" class="spring.Book" scope ="singleton">
+<property name="price" value="2000"></property>
+<property name="bookName" value="one day before"></property>
+<property name="authorName" value="william"></property>
+</bean>
+<bean id="bookpublisherbean" class="spring.BookPublisher" scope ="singleton">
+<property name="book" ref="bookbean"></property>
+</bean>-->
+<bean id="listbean" class="spring.bookList" scope="singleton">
+<property name="bookList">
+<list>
+<value>"chamber of secrets"</value>
+<value>"Order of phoeneix"</value>
+
+</list>
+
+
+
+
+</property>
+</bean>
+</beans>
